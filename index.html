@@ -1,0 +1,128 @@
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Simple JSON Loader App</title>
+
+	<!-- Bootstrap Core CSS -->
+	<link rel="stylesheet" href="lib/css/bootstrap.min.css">
+	<link rel="stylesheet" href="lib/css/bootstrap-theme.min.css">
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="css/flag-icon.min.css">
+	<link rel="stylesheet" href="css/main.css">
+
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		<script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+
+<body ng-app="companyapp" ng-cloak>
+<div class="container" ng-controller="CompCtrl">
+	<div class="row clearfix">
+		<div class="col-md-12 column">
+			<ul class="nav nav-pills">
+				<li class="active">
+					<a href="#">Home</a>
+				</li>
+				<li>
+					<a href="#">Profile</a>
+				</li>
+				<li class="disabled">
+					<a href="#">Messages</a>
+				</li>
+				<li class="dropdown pull-right">
+					 <a href="#" data-toggle="dropdown" class="dropdown-toggle">Dropdown<strong class="caret"></strong></a>
+					<ul class="dropdown-menu">
+						<li>
+							<a href="#">Action</a>
+						</li>
+						<li>
+							<a href="#">Another action</a>
+						</li>
+						<li>
+							<a href="#">Something else here</a>
+						</li>
+						<li class="divider">
+						</li>
+						<li>
+							<a href="#">Separated link</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="row clearfix" ng-repeat="comp in companiesData.Entry">
+		<div class="col-md-8 column">
+			<h1>
+				<strong>{{comp.Name}}</strong>
+			</h1>
+			<h3>
+				Id: <strong>{{comp.Id}}</strong>,  Sector: <strong>{{comp.Sector}}/{{comp.SubSector}}</strong>
+			</h3>
+			<a ng-href="#" class="flag-icon flag-icon-il" id="il" ng-click="changeToIl()"></a><a ng-href="#" class="flag-icon flag-icon-us" id="us" ng-click="changeToEng()"></a><br>
+			<h4 ng-show="!heb">
+				Company Activity:
+			</h4>
+			<p ng-show="!heb">
+				{{comp.CompanyActivityEn}}
+			</p>
+			<h4 class="hebrtl" ng-show="heb">
+				פעילויות עיסקיות:
+			</h4>
+			<p class="hebrtl" ng-show="heb">
+				{{comp.CompanyActivity}}
+			</p>
+			<br>
+			<h4>
+				Financial Summary:
+			</h4>
+			<p>
+				{{comp.FinancialSummary}}
+			</p>
+			<br>
+			<h4>
+				Sectors:
+			</h4>
+			<table class="table">
+				<thead>
+					<tr>
+						<th ng-repeat="sector in comp.Sectors.Sector">
+							{{sector.Type}}
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td ng-repeat="sector in comp.Sectors.Sector">
+							<i>{{sector.Name}}</i>
+						</td>
+					</tr>
+					<tr>
+						<td ng-repeat="sector in comp.Sectors.Sector">
+							{{sector.Code}}
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="col-md-4 column">
+		<h2>Simple JSON loader</h2>
+		<p><strong>Created By:</strong> Ronen Stern</p>
+		</div>
+	</div>
+</div>
+	<!-- Libraries -->
+	<script src="lib/js/jquery.min.js"></script>
+	<script src="lib/js/bootstrap.min.js"></script>
+	<script data-require="angular.js@*" src="lib/js/angular.min.js"></script>
+    <script src="lib/js/angular-route.min.js"></script>
+
+	<!-- App -->
+	<script src="app/app.js"></script>
+</body>
+</html>

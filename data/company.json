@@ -1,0 +1,45 @@
+{
+    "Companies": {
+        "Entry": [{
+            "CompanyActivity": "חברת אפל מפתחת ומוכרת מוצרי אלקטרוניקה, תוכנות מחשב ומחשבים אישיים. המוצרים המוכרים ביותר של החברה הם קו המחשבים בשם מקינטוש, סדרת הסמרטפונים iPhone, , נגני המוסיקה iPod וסדרת מחשבי הלוח iPad. מוצרי התוכנה של החברה: מערכת ההפעלה iOS למכשירי iPhone, iPod ו-iPad,  מערכת ההפעלה OS X למחשבי המקינטוש, חנות המדיה  iTune,דפדפן Safari  וכן החבילות iLife ו- iWork  שכוללות מספר יישומים משרדיים. נוסדה ב- 1976, ומעסיקה למעלה מ- 75000 עובדים ב- 14 מדינות",
+            "Sector": "88",
+            "SubSector": "1",
+            "Name": "Apple Inc.",
+            "Language": "en",
+            "CompanyActivityEn": "Apple Inc. designs, manufactures and markets mobile communication and media devices, personal computers and portable digital music players and sells a variety of related software, services, peripherals, networking solutions and third-party digital content and applications. The Company's products and services include iPhone, iPad, Mac, iPod, Apple TV, a portfolio of consumer and professional software applications, the iOS and OS X operating systems, iCloud and a variety of accessory, service and support offerings. The Company offers a range of mobile communication and media devices, personal computing products and portable digital music players, as well as a variety of related software, services, peripherals, networking solutions and third-party hardware and software products. The Company's primary products include iPhone, iPad, Mac, iPod, iTunes, Mac App Store, iCloud, Operating System Software, Application Software and Other Application Software.",
+            "FinancialSummary": "BRIEF: For the 13 weeks ended 27 December 2014, Apple Inc. revenues increased 30% to $74.6B. Net income increased 38% to $18.02B. Revenues reflect an increase in demand for the Company's products and services due to favorable market conditions. Dividend per share increased from $0.44 to $0.47. Basic Earnings per Share excluding Extraordinary Items increased from $2.08 to $3.08.",
+            "Id": "AAPL",
+            "Sectors": {
+                "Sector": [{
+                    "Code": "57103010",
+                    "Name": "Computer Hardware",
+                    "Type": "TRBC2009"
+                }, {
+                    "Code": "5710601010",
+                    "Name": "Computer Hardware - NEC",
+                    "Type": "TRBC2012"
+                }, {
+                    "Code": "57131",
+                    "Name": "Computer Hardware",
+                    "Type": "RBSS2004"
+                }, {
+                    "Code": "1003",
+                    "Name": "Communications Equipment",
+                    "Type": "MGINDUSTRY"
+                }, {
+                    "Code": "10",
+                    "Name": "Technology",
+                    "Type": "MGSECTOR"
+                }, {
+                    "Code": "44312",
+                    "Name": "Computer and Software Stores",
+                    "Type": "NAICS"
+                }, {
+                    "Code": "5734",
+                    "Name": "Computer And Software Stores",
+                    "Type": "SIC"
+                }]
+            }
+        }]
+    }
+}
